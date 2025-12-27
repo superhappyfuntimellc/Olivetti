@@ -53,6 +53,7 @@ def cmd_describe(args):
     assistant = WritingAssistant(voice_profile=args.profile)
     
     result = assistant.describe(args.subject, args.detail)
+    result = assistant.describe(args.subject, args.detail_level)
     print(result)
     return 0
 
@@ -231,6 +232,7 @@ Examples:
     describe_parser = subparsers.add_parser('describe', help='Describe a subject')
     describe_parser.add_argument('subject', help='What to describe')
     describe_parser.add_argument('--detail', '-d', choices=['brief', 'detailed', 'extensive'],
+    describe_parser.add_argument('--detail-level', '-d', choices=['brief', 'detailed', 'extensive'],
                                 default='detailed', help='Level of detail')
     describe_parser.add_argument('--profile', '-p', help='Voice profile to use')
     describe_parser.set_defaults(func=cmd_describe)
