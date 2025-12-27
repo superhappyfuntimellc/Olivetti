@@ -23,6 +23,7 @@ text_content = st.text_area(
 if text_content:
     word_count = len(text_content.split()) if text_content.strip() else 0
     char_count = len(text_content)
+    line_count = len(text_content.splitlines()) if text_content.strip() else 0
     
     col1, col2, col3 = st.columns(3)
     with col1:
@@ -30,7 +31,7 @@ if text_content:
     with col2:
         st.metric("Words", word_count)
     with col3:
-        st.metric("Lines", text_content.count('\n') + 1)
+        st.metric("Lines", line_count)
 
 st.markdown("---")
 st.markdown("*A simple, elegant writing space for authors and creators.*")
