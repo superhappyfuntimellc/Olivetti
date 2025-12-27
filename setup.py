@@ -14,7 +14,6 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     author="Olivetti Team",
-    author_email="",
     url="https://github.com/superhappyfuntimellc/Olivetti",
     packages=find_packages(),
     install_requires=[
