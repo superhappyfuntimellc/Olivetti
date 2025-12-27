@@ -1,1 +1,7 @@
 streamlit>=1.28.0
+openai>=1.0.0
+python-docx>=1.0.0
+
+# Optional: For desktop mode (native window instead of browser)
+# Uncomment to install:
+# pywebview>=4.0.0
