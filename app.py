@@ -21,7 +21,7 @@ text_content = st.text_area(
 
 # Display character and word count
 if text_content:
-    word_count = len(text_content.split())
+    word_count = len(text_content.split()) if text_content.strip() else 0
     char_count = len(text_content)
     
     col1, col2, col3 = st.columns(3)
