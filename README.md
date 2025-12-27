@@ -93,6 +93,13 @@ Range: 0.0 (LOW) to 1.0 (MAX) - Controls creativity and risk-taking
 - DOCX (optional)
 - Project JSON
 
+### 🖥️ Desktop Mode
+- Run as a standalone desktop application
+- Native window experience (with pywebview)
+- No browser needed
+- Cross-platform: Windows, macOS, Linux
+- Easy launcher scripts included
+
 ## Setup
 
 ### Prerequisites
@@ -123,6 +130,25 @@ cp streamlit/.secrets.toml.example .streamlit/secrets.toml
 ```
 
 4. Run the application:
+
+**Option A: Desktop Mode (Recommended)**
+```bash
+# On Windows:
+launch_desktop.bat
+
+# On macOS/Linux:
+./launch_desktop.sh
+
+# Or directly with Python:
+python desktop_launcher.py
+```
+
+For a native desktop window experience (instead of browser), install the optional dependency:
+```bash
+pip install pywebview>=4.0.0
+```
+
+**Option B: Web Browser Mode**
 ```bash
 streamlit run app.py
 ```
