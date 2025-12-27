@@ -1,3 +1,4 @@
+# Core dependencies
 # Web App dependencies (Streamlit)
 streamlit>=1.28.0
 python-docx>=1.0.0
@@ -7,6 +8,10 @@ openai>=1.0.0
 anthropic>=0.25.0
 requests>=2.31.0
 
+# Optional dependencies for development
+pytest>=7.4.0
+black>=23.0.0
+ruff>=0.1.0
 # Optional: For desktop mode (native window instead of browser)
 # Uncomment to install:
 # pywebview>=4.0.0
