@@ -1,0 +1,9 @@
+include README.md
+include QUICKSTART.md
+include CONTRIBUTING.md
+include LICENSE
+include requirements.txt
+include .env.example
+recursive-include olivetti *.py
+recursive-include tests *.py
+recursive-include examples *.py
